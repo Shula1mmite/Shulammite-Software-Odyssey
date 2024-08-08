@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shulammite's Software Odyssey</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo" alt="Logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Welcome to Shulammite's Software Odyssey!</h1>
+            <p>Hi, I'm <span>Shulammite</span><br>Onwuemeri</p>
+            </div>
+        </div>
+    </div>
+
+
+ <!------------about------------>
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/img3.png" alt="About Image">
+            </div>
+            <div class="about-col-2">
+                <div class="about-text"></div>
+                <h1>About Me</h1>
+                <p>
+                    Hi, I'm Shulammite Onwuemeri, a passionate web developer dedicated to creating intuitive and dynamic user experiences. 
+                    With a strong foundation in HTML, CSS, and JavaScript, I enjoy bringing ideas to life on the web. 
+                    I am committed to continuous learning and am currently aiming to pursue a degree in software engineering. 
+                    My goal is to craft visually appealing and functional websites that make a positive impact.
+                </p>
+                </div>
+                <div class="tab-titles">
+                    <div class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</div>
+                    <div class="tab-links" onclick="opentab(event, 'education')">Education</div>
+                    <div class="tab-links" onclick="opentab(event, 'experience')">Experience</div>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Developer:</span> Create functional, user-friendly websites and web applications.</li>
+                        <li><span>Python Developer:</span> Design, code, and deploy development projects in the Python language.</li>
+                        <li><span>DevOps Engineer:</span> Improve processes, collaboration, and automation in software development and IT operations.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023-2024:</span> Completed web development course with FreeCodeCamp in June 2024.</li>
+                        <li><span>2023-2024:</span> Completed full-stack Python course with Simplilearn in September 2023.</li>
+                        <li><span>2023-2024:</span> Completed DevOps course with Google Cloud in January 2024.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li>
+                            <span>Freelancer - Web Developer:</span>
+                            <br>
+                            <ul>
+                                <li>Developed and maintained responsive websites for various clients, ensuring cross-browser compatibility and mobile responsiveness.</li>
+                                <li>Collaborated with clients to gather requirements, provide design mockups, and deliver custom web solutions tailored to their needs.</li>
+                                <li>Implemented front-end technologies such as HTML, CSS, JavaScript, and frameworks like React or Angular to create dynamic user interfaces.</li>
+                                <li>Integrated back-end services using technologies like Node.js, Python, or PHP to build full-stack applications.</li>
+                                <li>Optimized website performance by implementing best practices for SEO, page load speed, and user experience.</li>
+                                <li>Utilized version control systems (e.g., Git) to manage code repositories and facilitate collaboration with other developers.</li>
+                                <li>Provided ongoing maintenance and updates to ensure websites remained secure, up-to-date, and functional.</li>
+                                <li>Received positive feedback from clients for delivering high-quality work within deadlines and exceeding expectations.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>Freelancer - Python Developer:</span>
+                            <br>
+                            <ul>
+                                <li>Designed, developed, and deployed Python-based applications, focusing on efficiency and scalability.</li>
+                                <li>Created automated scripts for data processing, web scraping, and system administration tasks.</li>
+                                <li>Built RESTful APIs and integrated third-party services to enhance application functionality.</li>
+                                <li>Worked with databases such as MySQL, PostgreSQL, and MongoDB for data storage and retrieval.</li>
+                                <li>Collaborated with cross-functional teams to deliver end-to-end solutions, from concept to deployment.</li>
+                                <li>Utilized frameworks such as Django and Flask to develop robust web applications.</li>
+                                <li>Conducted thorough testing and debugging to ensure high-quality code and application stability.</li>
+                                <li>Maintained comprehensive documentation for codebases, processes, and procedures.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>Freelancer - DevOps Engineer:</span>
+                            <br>
+                            <ul>
+                                <li>Implemented and managed CI/CD pipelines to streamline software development and deployment processes.</li>
+                                <li>Automated infrastructure provisioning and configuration management using tools like Ansible, Terraform, and Docker.</li>
+                                <li>Monitored system performance and reliability using tools such as Prometheus, Grafana, and ELK stack.</li>
+                                <li>Collaborated with development teams to ensure seamless integration and continuous delivery of software updates.</li>
+                                <li>Configured and managed cloud environments (e.g., AWS, GCP, Azure) to support scalable and resilient applications.</li>
+                                <li>Developed and maintained scripts for automated backups, monitoring, and system maintenance tasks.</li>
+                                <li>Worked on improving security practices by implementing best practices for access control, encryption, and network security.</li>
+                                <li>Provided technical support and troubleshooting for deployment issues and production incidents.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+ <!-------------services-------------->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>
+                Web Development
+            </h2>
+                <p>
+                    I am dedicated to delivering top-notch web development services tailored to meet the unique needs of each client. With a passion for technology and a commitment to excellence, I bring a comprehensive skill set to the table, ensuring that every project I undertake is executed with precision and creativity. I strive to create web experiences that are both functional and engaging. Explore my diverse range of services designed to help you achieve your digital goals and elevate your online presence.
+        
+        
+                </p>
+            </div>
+            <div>
+                <i class="fab fa-python"></i>
+                
+            <h2>
+                python Programming
+            </h2>
+                <p>
+                    I specialize in delivering high-quality solutions that leverage the full power and flexibility of this versatile language. Whether you're looking to develop custom applications, automate repetitive tasks, or analyze complex data, my Python programming services are designed to meet your needs with precision and efficiency. With a solid foundation in Python and its various frameworks, I offer expertise in building robust software, creating data-driven insights, and implementing innovative solutions that drive business success. Explore how my Python programming services can transform your ideas into powerful, functional tools that enhance your operational capabilities and achieve your strategic goals.
+        
+        
+                </p>
+            </div>
+            <div>
+                <i class="fas fa-cogs"></i>
+
+
+                <h2>
+                Devops engineering
+            </h2>
+                <p>
+                    I am excited to offer foundational services designed to support and enhance your development and operations processes. I am passionate about DevOps and committed to applying my growing knowledge of automation, CI/CD pipelines, and cloud services to help streamline your operations. My goal is to assist you in implementing efficient workflows, automating repetitive tasks, and ensuring reliable deployments. With a strong foundation in DevOps principles and a willingness to learn and adapt, I am eager to contribute to your projects and help drive continuous improvement and operational efficiency.
+
+
+        
+        
+                </p>
+            </div>
+
+        </div>
+    </div>
+ </div>
+ <!-------------portfolio--------------->
+ <div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="Work">
+                <img src="images/img7.png" alt="Survey Form">
+                <div class="layer">
+                    <a href="https://drive.google.com/file/d/1tdfoY-YPndyqKbnSRI8QzhXBSVCl8uEV/view?usp=drive_link"><i class="fas fa-external-link-alt"></i></a>
+ 
+                    <p>This project involved designing and  <br>developing an interactive survey form to <br> gather user feedback on a new product. <br>The form includes various question types  <br>such as multiple-choice, rating scales, and text inputs, and  <br>features a user-friendly interface with responsive <br> design.</p>
+                </div>
+            </div>
+            <div class="Work">
+                <img src="images/img8.png" alt="Statistics Calculator">
+                <div class="layer">
+                    <a href="https://drive.google.com/file/d/1tdfoY-YPndyqKbnSRI8QzhXBSVCl8uEV/view?usp=drive_link"><i class="fas fa-external-link-alt"></i></a>
+
+                    <p>Provides essential statistical functions <br> such as mean, median, mode, standard deviation, <br> and variance. It is designed to help users analyze <br> data efficiently and accurately.</p>
+                </div>
+            </div>
+            <div class="Work">
+                <img src="images/img9.png" alt="Cat Gallery">
+                <div class="layer">
+                    <a href="https://drive.google.com/file/d/1tdfoY-YPndyqKbnSRI8QzhXBSVCl8uEV/view?usp=drive_link"><i class="fas fa-external-link-alt"></i></a>
+
+                    <p>This project features a dynamic cat gallery <br> where users can browse through a collection  <br>of adorable cat images. The gallery <br> allows users to filter and search for specific breeds <br> or types of cats, providing a fun and interactive <br> experience for cat enthusiasts.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------FAQ-------------->
+<div id="faq">
+    <div class="container">
+        <h1 class="sub-title" data-translate="faq-title">Frequently Asked Questions</h1>
+        <div class="faq-list">
+            <div class="faq-item">
+                <h3 class="faq-question">What services do you offer?</h3>
+                <p class="faq-answer">I offer web development, Python programming, and DevOps engineering services.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">How can I contact you?</h3>
+                <p class="faq-answer">You can contact me via email at shuniegold@gmail.com or by phone at 07063059253.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Do you offer custom web solutions?</h3>
+                <p class="faq-answer">Yes, I collaborate with clients to provide custom web solutions tailored to their needs.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">What is your process for developing a website?</h3>
+                <p class="faq-answer">My process involves understanding your requirements, creating a design mockup, developing the website, testing it thoroughly, and finally deploying it to your server. I keep you informed at every stage to ensure the final product meets your expectations.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">How long does it take to develop a website?</h3>
+                <p class="faq-answer">The timeline for developing a website depends on the complexity and features required. A simple website can take a few weeks, while a more complex one might take several months. I provide an estimated timeline after understanding your specific needs.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Do you offer maintenance and support after the website is launched?</h3>
+                <p class="faq-answer">Yes, I offer ongoing maintenance and support services to ensure your website remains up-to-date, secure, and functional. This includes regular updates, bug fixes, and technical support.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Can you help with website SEO?</h3>
+                <p class="faq-answer">Absolutely! I implement best practices for SEO during the development process to help improve your website's visibility on search engines. I also offer additional SEO services to further enhance your site's search engine ranking.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">What payment methods do you accept?</h3>
+                <p class="faq-answer">I accept various payment methods including bank transfers, credit/debit cards, and online payment platforms like PayPal. Specific details can be discussed during the project agreement stage.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">How do you ensure the security of the websites you develop?</h3>
+                <p class="faq-answer">I follow best practices for web security, including implementing SSL certificates, using secure coding practices, conducting regular security audits, and keeping all software and plugins up-to-date to protect against vulnerabilities.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Do you provide training on how to manage the website?</h3>
+                <p class="faq-answer">Yes, I provide training and documentation to help you manage and update your website independently. This includes guidance on using the content management system, updating content, and performing basic maintenance tasks.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------goals and hobbies------------->
+<section id="goals">
+    <h2>Goals</h2>
+    <div class="goal-category">
+        <img src="images/img4.png" alt="Goals Image" class="goals-image">
+      <h3>Short-Term Goals</h3>
+      <ul>
+        <li>
+          <strong>Complete a Certification Course:</strong> Enroll in and complete a certification course in DevOps to enhance skills and knowledge in the field.
+        </li>
+        <li>
+          <strong>Develop a Personal Project:</strong> Build and deploy a personal project related to Human-Robot Interaction to showcase practical application skills.
+        </li>
+        <li>
+          <strong>Attend Industry Events:</strong> Participate in technology conferences or webinars to network and stay updated with the latest trends.
+        </li>
+      </ul>
+    </div>
+    
+    <div class="goal-category">
+      <h3>Medium-Term Goals</h3>
+      <ul>
+        <li>
+          <strong>Secure a Scholarship:</strong> Obtain a scholarship for a technology college in Japan to advance education and career prospects.
+        </li>
+        <li>
+          <strong>Publish Research:</strong> Conduct and publish research in Human-Robot Interaction to contribute to the academic community.
+        </li>
+        <li>
+          <strong>Improve Language Skills:</strong> Achieve fluency in multiple languages relevant to the technology industry, including Japanese and Chinese.
+        </li>
+      </ul>
+    </div>
+    
+    <div class="goal-category">
+      <h3>Long-Term Goals</h3>
+      <ul>
+        <li>
+          <strong>Innovate in Robotics:</strong> Lead innovative projects in robotics that focus on enhancing human-robot coexistence and interaction.
+        </li>
+        <li>
+          <strong>Establish a Tech Startup:</strong> Create a technology startup that specializes in software solutions and robotic technologies.
+        </li>
+        <li>
+          <strong>Contribute to Global Tech Communities:</strong> Engage with and contribute to global technology communities and initiatives to drive positive change.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="hobbies">
+    <h2>Hobbies</h2>
+    <div class="hobbies-images">
+        <img src="images/img11.png" alt="hobbies1 Image" class="hobbies1-image">
+        <img src="images/img12.png" alt="hobbies2 Image" class="hobbies2-image">
+      </div>
+    <ul>
+      <li><span class="icon">💻</span> Technology Enthusiast: Exploring the latest advancements and trends in technology.</li>
+      <li><span class="icon">💬</span> Networking: Engaging in discussions with like-minded individuals to share knowledge and insights.</li>
+      <li><span class="icon">🎮</span> Gaming: Immersing in various video games for both entertainment and strategic thinking.</li>
+      <li><span class="icon">🏃</span> Physical Activities: Participating in sports and outdoor activities to stay active and healthy.</li>
+    </ul>
+  </section>
+  
+  
+
+<!------------contact------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> shuniegold@gmail.com</p>
+                <p> <i class="fas fa-phone-square-alt"></i> 07063059253</p>
+                <div class="social-icons">
+                    <a href="https://wa.me/2347063059253"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="your name" required>
+                    <input type="email" name="Email" placeholder="your email" required>
+                    <textarea name="Message" rows="6" placeholder="your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="copyright">
+        <p>&copy; 2024 <i class="fas fa-heart"></i>Shulammite. All rights reserved.</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(event, tabname) {
+        console.log('Opening tab:', tabname);  // Debugging: Check which tab is being opened
+        for (var tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (var tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+        }
+ </script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxCUIfY9Durm9gASMKbopsg-7LBUxomNuEUl7l_VA_urpu2RAJU75IcnadUTCdx7i42/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script>
+    document.querySelectorAll('.faq-question').forEach(item => {
+        item.addEventListener('click', event => {
+            const parent = event.target.parentElement;
+            parent.classList.toggle('active');
+        });
+    });
+</script>
+</body>
+</html>
+
+
+
